@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 
+// Navigation bar
 const Menu = props => {
   console.log("Menu - Rendered");
   return (
@@ -17,6 +18,7 @@ const Menu = props => {
   );
 };
 
+// List items
 const ListField = props => {
   console.log(" SectionField - Rendered");
   return (
@@ -26,6 +28,7 @@ const ListField = props => {
   );
 };
 
+// Aside list items
 const AsideField = props => {
   console.log(" AsideField - Rendered");
   return (
@@ -71,9 +74,10 @@ const AsideField = props => {
   );
 }
 
+// JSON list
 var list = require('./infoData.json')
 
-
+// List items
 const ComplexList = () => (
   <ul className="listItems">{
     list.map(item => (
@@ -87,6 +91,7 @@ const ComplexList = () => (
   </ul>
 );
 
+// App function
 function App() {
   return (
     <main>
