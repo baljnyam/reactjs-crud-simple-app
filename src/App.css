@@ -1,3 +1,13 @@
+/* top thematic break */
+hr {
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+/* top list items */
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -5,40 +15,155 @@ ul.topnav {
   overflow: hidden;
   background-color: white;
   font-family: sans-serif;
+  top: 50%;
 }
 
+/* list items right aligned */
 ul.topnav li {
   float: right;
 }
 
+/* list link items */
 ul.topnav li a {
   display: block;
   color: #202124;
   text-align: center;
-  padding: 14px 16px;
+  padding: 17px 17px;
   text-decoration: none;
 }
 
+/* hover effect menu on list items */
 ul.topnav li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #ccc;
 }
 
-ul.topnav li a.active {
-  background-color: #4CAF50;
-}
-
-ul.topnav li.left {
+/* search block style */
+ul.topnav li.search {
+  padding: 16px 16px;
   float: left;
 }
 
+/* input styling */
+ul li input {
+  border-radius: 10px;
+  outline: none !important;
+  border: 1px solid;
+  border-color: #ccc;
+}
+
+ul li input:focus {
+  box-shadow: 0 0 5px lightgrey;
+}
+
+/* On screens that are 600px wide or less*/
 @media screen and (max-width: 600px) {
 
-  ul.topnav li.left,
+  .side,
+  ul li input,
   ul.topnav li {
     float: none;
+    width: 97%;
   }
 }
 
+/* container of side tags */
+.container {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 7fr 0.05fr 2.95fr;
+  margin: 0px 5px 0px 5px;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* vertical line */
+.vl {
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+
+/* two side content */
+div.side {
+  margin: 10px;
+  text-align: center;
+  list-style-type: none;
+}
+
+/* grid list left side */
+.listItems {
+  grid-gap: 10px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 125px 125px 125px 125px 125px;
+  grid-auto-flow: row;
+}
+
+.listItems>li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.listItems li:hover:not(.active) {
+  box-shadow: 0 0 5px lightgrey;
+  border: 2px solid rgb(92, 245, 92);
+}
+
+img {
+  border-radius: 90%;
+}
+
+/* grid list right side */
+ul.service,
+ul.twinButton,
+ul.language,
+ul.topSide,
+ul.bottomSide {
+  list-style-type: none;
+  margin: 0;
+  padding: 16px;
+  overflow: hidden;
+  background-color: white;
+  font-family: sans-serif;
+  top: 50%;
+}
+
+ul.topSide {
+  text-align: center;
+}
+
+ul.twinButton li {
+  display: inline;
+}
+
+.button-1 {
+  background-color: #4CAF50;
+  border-radius: 40%;
+  width: 250px;
+
+}
+
+/* Green */
+.button-1,
+.button-2 {
+  background-color: #13EBA2;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  margin: 10px;
+  outline: none !important;
+}
+
+/* Green */
+
+/* App style */
 .App {
   text-align: center;
 }
