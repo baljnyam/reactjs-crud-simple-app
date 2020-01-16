@@ -91,12 +91,10 @@ div.side {
 
 /* grid list left side */
 .listItems {
-  grid-gap: 10px;
+  grid-gap: 45px;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: 125px 125px 125px 125px 125px;
-  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .listItems>li {
@@ -121,7 +119,7 @@ ul.topSide,
 ul.bottomSide {
   list-style-type: none;
   margin: 0;
-  padding: 16px;
+  padding: 0px 16px 0px 16px;
   overflow: hidden;
   background-color: white;
   font-family: sans-serif;

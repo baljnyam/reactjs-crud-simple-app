@@ -87,9 +87,6 @@ const ComplexList = () => (
   </ul>
 );
 
-
-
-
 function App() {
   return (
     <main>
